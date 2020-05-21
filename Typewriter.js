@@ -20,7 +20,7 @@ class TxtType {
     this.element.innerHTML = '<span class="wrap">' + this.txt + "</span>";
 
     let that = this;
-    let delta = 200 - Math.random() * 100;
+    let delta = 170 - Math.random() * 100;
 
     if (this.isDeleting) {
       delta /= 2;
