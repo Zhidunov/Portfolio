@@ -41,7 +41,6 @@ class TxtType {
 }
 
 window.onload = function () {
-  debugger;
   let elements = document.getElementsByClassName("typewrite");
   for (let i = 0; i < elements.length; i++) {
     let toRotate = elements[i].getAttribute("data-type");

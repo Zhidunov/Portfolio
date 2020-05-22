@@ -65,7 +65,7 @@ body {
     left: 0;
     width: 0;
     height: 15px;
-    background-color: #c0c0c0;
+    background-color: #5dd6ff;
     border-radius: 1000px;
     animation-duration: .7s;
     animation-timing-function: ease;
@@ -107,6 +107,20 @@ body {
     to {
         width: 35%;
     }
+}
+
+.clock {
+    position: relative;
+}
+.doc_data {
+    position: absolute;
+    padding-top: 155px;
+    padding-left: 210px;
+}
+.doc_time {
+    position: absolute;
+    padding-top: 155px;
+    padding-left: 420px;
 }
 
 .cover {
