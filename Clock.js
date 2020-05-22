@@ -33,7 +33,3 @@ function clock() {
   document.querySelector(".doc_time").innerHTML = clock_time;
   setTimeout(()=>clock(), 1000);
 }
-
-window.onload = function () {
-  clock();
-};

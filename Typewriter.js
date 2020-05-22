@@ -39,21 +39,3 @@ class TxtType {
     }, delta);
   }
 }
-
-window.onload = function () {
-  let elements = document.getElementsByClassName("typewrite");
-  for (let i = 0; i < elements.length; i++) {
-    let toRotate = elements[i].getAttribute("data-type");
-    let period = elements[i].getAttribute("data-period");
-    if (toRotate) {
-      let func = new TxtType(elements[i], JSON.parse(toRotate), period);
-      func.tick();
-    }
-  }
-
-
-  let css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid black}";
-  document.body.appendChild(css);
-};
