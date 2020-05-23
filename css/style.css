@@ -140,7 +140,7 @@ body {
     border: 2px solid #4cccff;
     border-radius: 5px;
     margin-top: 50px;
-    padding: 15px;
+    padding: 5px 2px 5px 5px;
 }
 
 .block__list {
@@ -178,9 +178,42 @@ body {
 }
 
 .block__list-elem {
+    position: relative;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    border: 1px solid;
+    border-radius: 3px;
+    line-height: 25px;
+}
+
+.block__list__elem-delete {
+    position: relative;
     font-family: 'Caveat', cursive;
     font-size: 20px;
     margin-bottom: 5px;
+    padding-left: 100px;
+    border: 1px solid;
+    border-radius: 3px;
+    line-height: 25px;
+    text-decoration: line-through;
+    color: #b8b8b8;
+    opacity: 0;
+    transition: 1s;
+}
+
+.block__list-delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: 'Merriweather', serif;
+    width: 15%;
+    border-radius: 3px;
+    line-height: 15px;
+    border: 1px solid;
+    text-align: center;
+    margin: 4px;
 }
 
 /* Стили для обложки */
