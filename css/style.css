@@ -27,12 +27,12 @@ body {
   border-radius: 0px 10px 10px 0px;
 }
 
-.page h2 {
+.page h1 {
     text-align: center;
     font-size: 30px;
     padding-top: 30px;
 }
-.page h3 {
+.page h2 {
     text-align: center;
     font-size: 20px;
     padding-top: 10px;
@@ -41,7 +41,7 @@ body {
 .skills {
     width: 200px;
     margin: 30px 0;
-    padding-top: 60px;
+    padding-top: 50px;
     padding-left: 50px;
 }
 
@@ -132,14 +132,17 @@ body {
     margin: 0 auto;
     padding: 0 30px;
 }
-
+.todolist > span {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
 .block {
     position: relative;
     width: 420px;
     height: 170px;
     border: 2px solid #4cccff;
     border-radius: 5px;
-    margin-top: 50px;
+    margin-top: 5px;
     padding: 5px 2px 5px 5px;
 }
 
@@ -303,17 +306,15 @@ body {
     opacity: .9;
 }
 
-
-
 .page__nav__ul {
     position: absolute;
+    z-index: 1000;
     left: 340px;
     top: 220px;
-
 }
 
 .page__nav__ul a {
-    display: inline-block;
+    display: block;
     position: relative;
     height: 30px;
     width: 150px;
@@ -347,4 +348,56 @@ body {
     text-align: center;
     font-size: 20px;
     padding-top: 20px;
+}
+
+/* Страница "Обо мне" */
+
+.page__nav__ul.about__nav {
+    position: absolute;
+    z-index: 1000;
+    left: 10px;
+    top: 10px;
+}
+
+.page__nav__ul.about__nav li {
+    display: inline-block;
+  }
+.page__nav__ul.about__nav a {
+    width: 140px;
+}
+
+.about {
+    position: relative;
+    padding: 20px;
+    margin-top: 40px;
+    z-index: 1;
+    max-height: 540px;
+    overflow: auto;
+}
+
+.about h3 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0px 10px 30px;
+    color: #00445f;
+}
+
+.about h4 {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 0px 10px 10px;
+    color: #00445f;
+}
+
+.about p {
+    font-family: 'Merriweather', serif;
+    text-align: justify;
+    font-size: 13px;
+    line-height: normal;
+}
+
+.hardSkills {
+    width: 300px;
 }

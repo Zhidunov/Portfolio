@@ -13,9 +13,9 @@
   <body>
     <div class="container">
       <!-- Основная страница портфолио -->
-      <div class="page">
-        <h2>Привет! Меня зовут Никита.</h2>
-        <h3>Я фронтенд-разработчик.</h3>
+      <section class="page">
+        <h1>Привет! Меня зовут Никита.</h1>
+        <h2>Я фронтенд разработчик.</h2>
         <div
           class="typewrite"
           data-period="1000"
@@ -23,7 +23,7 @@
         >
           <span class="wrap"></span>
         </div>
-        <div class="page__nav">
+        <nav class="page__nav">
           <ul class="page__nav__ul">
             <li>
               <a class="page__nav__first" href="about.html">Обо мне</a>
@@ -35,7 +35,7 @@
               <a class="page__nav__third" href="#">Блог</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <div class="skills">
           <ul>
             <li class="html">Верстка</li>
@@ -45,6 +45,7 @@
           </ul>
         </div>
         <div class="todolist">
+          <span>Список дел на неделю:</span>
           <div class="block">
             <ul class="block__list"></ul>
             <div class="block_form">
@@ -61,11 +62,11 @@
            <span class="doc_time">
           </span>
         </div>
-      </div>
+      </section>
       <!-- ----------------- -->
 
       <!-- Обложка портфолио -->
-      <div class="cover">
+      <section class="cover">
         <div class="contact">
           <img class="bookmark" src="./img/book2.svg" alt="bookmark" />
           <ul class="bookmark__nav">
@@ -87,23 +88,23 @@
               /></a>
             </li>
           </ul>
-          <div class="arrow">
+          <figure class="arrow">
             <img src="./img/arrow.svg" alt="arrow">
-          </div>
+          </figure>
           <span>Здесь мои контакты</span>
         </div>
         
         <div class="me">
-          <div class="photo">
+          <figure class="photo">
             <img src="./img/photo1.jpg" alt="Photo">
-          </div>
-          <div class="arrow">
+          </figure>
+          <figure class="arrow">
             <img src="./img/arrow.svg" alt="arrow">
-          </div>
+          </figure>
           <span>Это я</span>
         </div>
         
-      </div>
+      </section>
       <!-- ----------------- -->
     </div>
     <script src="./scripts/Clock.js"></script>
