@@ -1,13 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>
-        Мои работы
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Основная страница портфолио -->
+      <section class="page">
+        <nav class="page__nav">
+          <ul class="page__nav__ul about__nav">
+            <li>
+              <a class="page__nav__first" href="about.html">Обо мне</a>
+            </li>
+            <li>
+              <a class="page__nav__second" href="index.html">На главную</a>
+            </li>
+            <li>
+              <a class="page__nav__third" href="#">Блог</a>
+            </li>
+          </ul>
+        </nav>
+
+        <main class="myworks">
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items">4</div>
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items">4</div>
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items">4</div>
+        </main>
+
+        <div class="clock">
+          <span class="doc_data"> </span>
+          <span class="doc_time"> </span>
+        </div>
+      </section>
+      <!-- ----------------- -->
+
+      <!-- Обложка портфолио -->
+      <section class="cover">
+        <div class="contact">
+          <img class="bookmark" src="./img/book2.svg" alt="bookmark" />
+          <ul class="bookmark__nav">
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/nikita-zhidunov-a1932a112"
+                ><img src="./img/linkedin.svg" alt="linkedin"
+              /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/Zhidunov"
+                ><img src="./img/github.svg" alt="github"
+              /></a>
+            </li>
+            <li>
+              <a href="mailto:zhidunov@gmail.com"
+                ><img src="./img/mail.svg" alt="email"
+              /></a>
+            </li>
+          </ul>
+          <figure class="arrow">
+            <img src="./img/arrow.svg" alt="arrow" />
+          </figure>
+          <span>Здесь мои контакты</span>
+        </div>
+
+        <div class="me">
+          <figure class="photo">
+            <img src="./img/photo1.jpg" alt="Photo" />
+          </figure>
+          <figure class="arrow">
+            <img src="./img/arrow.svg" alt="arrow" />
+          </figure>
+          <span>Это я</span>
+        </div>
+      </section>
+      <!-- ----------------- -->
     </div>
-</body>
+    <script src="./scripts/Clock.js"></script>
+    <script>
+      window.onload = function () {
+        clock();
+      };
+    </script>
+  </body>
 </html>

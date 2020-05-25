@@ -22,6 +22,9 @@ const createNewElement = (text) => {
     blockList.appendChild(newElem);
 }
 
+createNewElement('Изучить React Native');
+createNewElement('Попробовать Vue.js');
+
 btn.addEventListener("click", (e) => {
     e.preventDefault();
     if(input.value !== ""){
