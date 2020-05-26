@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Nikita Zhidunov Portfolio" />
     <meta name="author" content="Nikita Zhidunov" />
-    <meta name="keywords" content="portfolio, Nikita Zhidunov, frontend, JavaScript, React, html, css" />
+    <meta
+      name="keywords"
+      content="portfolio, Nikita Zhidunov, frontend, JavaScript, React, html, css"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Portfolio</title>
@@ -19,7 +22,7 @@
         <div
           class="typewrite"
           data-period="1000"
-          data-type='["В своей работе я использую:", "React + Redux", "Git + GitHub", "Photoshop + Figma", "HTML + CSS3"]'
+          data-type='["Я использую:", "React + Redux", "Git + GitHub", "Photoshop + Figma", "HTML + CSS3"]'
         >
           <span class="wrap"></span>
         </div>
@@ -50,17 +53,92 @@
             <ul class="block__list"></ul>
             <div class="block_form">
               <form action="">
-                <input type="text" placeholder="Название дела" class="block__form-input">
+                <input
+                  type="text"
+                  placeholder="Название дела"
+                  class="block__form-input"
+                />
                 <button type="submit" class="block__form-btn">Добавить</button>
               </form>
             </div>
           </div>
         </div>
         <div class="clock">
-          <span class="doc_data">
-           </span>
-           <span class="doc_time">
-          </span>
+          <span class="doc_data"> </span>
+          <span class="doc_time"> </span>
+        </div>
+        <div class="mobile">
+          <div class="info__mobile">
+            <h3>Основная информация:</h3>
+            <p>
+              Мне 28 лет, живу в г. Сочи. Активно изучаю фронтенд разработку
+              последние полгода. До этого имел небольшой опыт в программировании
+              на различных языках (Java, C++, JavaScript).
+            </p>
+            <h3>Образование:</h3>
+            <p>
+              Имею два высших образования по специальностям
+              <a
+                target="_blank"
+                href="http://www.astu.org/Content/PageChair/3575"
+                >"Комплексное обеспечение информационной безопасности
+                автоматизированных систем"</a
+              >
+              и
+              <a
+                target="_blank"
+                href="http://asu.edu.ru/universitet/1058-uridicheskii-fakultet.html"
+                >"Юриспруденция"</a
+              >.
+            </p>
+            <figure><img src="img/photo1.jpg" alt="Photo" /></figure>
+            <h3>Профессиональные навыки:</h3>
+            <p>
+              На данный момент в своей практике использую следующие технологии и
+              инструменты:
+            </p>
+            <h4>Технологии:</h4>
+            <p>HTML, CSS, JavaScript, React, Redux, TypeScript</p>
+            <h4>Инструменты:</h4>
+            <p>GIT, Photoshop, Figma</p>
+          </div>
+          <div class="myworks__mobile">
+            <h3>Мои работы:</h3>
+            <div class="card">
+              <img src="img/social_network.jpg" alt="React">
+              <div class="infoCards">
+                  <h3>SPA on React</h3>
+                  <p>Учебный проект на React (небольшая соц. сеть) с использованием Redux, Redux-thunk, Axios, хоков, хуков и классовых компонентов</p>
+                  <a class="card__btn git_btn" target="_blank" href="https://github.com/Zhidunov/learn-react"><img src="img/github.svg" alt="github"></a>
+                  <a class="card__btn link_btn" target="_blank" href="https://zhidunov.github.io/learn-react/"><img src="img/link.svg" alt="link"></a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/colored_tiles.jpg" alt="colored tiles game">
+              <div class="infoCards">
+                  <h3>Игра</h3>
+                  <p>Тестовое задание - сделать игру на совпадение плиток одного цвета используя React + Redux</p>
+                  <a class="card__btn git_btn" target="_blank" href="https://github.com/Zhidunov/ColoredTilesGame"><img src="img/github.svg" alt="github"></a>
+                  <a class="card__btn link_btn" target="_blank" href="https://zhidunov.github.io/ColoredTilesGame"><img src="img/link.svg" alt="link"></a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/portfolio.jpg" alt="Portfolio">
+              <div class="infoCards">
+                  <h3>Портфолио</h3>
+                  <p>Мое портфолио. Обновляю по мере возможности. Иногда правки большие, иногда очень мелкие.</p>
+                  <a class="card__btn git_btn" target="_blank" href="https://github.com/Zhidunov/Portfolio"><img src="img/github.svg" alt="github"></a>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__mobile">
+            <h3>Мои контакты:</h3>
+            <ul>
+              <li><a target="_blank" href="https://www.linkedin.com/in/nikita-zhidunov-a1932a112">Профиль на LinkedIn</a></li>
+              <li><a target="_blank" href="https://github.com/Zhidunov">GitHub</a></li>
+              <li><a href="mailto:zhidunov@gmail.com">Написать мне на e-mail</a></li>
+            </ul>
+          </div>
         </div>
       </section>
       <!-- ----------------- -->
@@ -83,27 +161,26 @@
               /></a>
             </li>
             <li>
-              <a  href="mailto:zhidunov@gmail.com"
+              <a href="mailto:zhidunov@gmail.com"
                 ><img src="./img/mail.svg" alt="email"
               /></a>
             </li>
           </ul>
           <figure class="arrow">
-            <img src="./img/arrow.svg" alt="arrow">
+            <img src="./img/arrow.svg" alt="arrow" />
           </figure>
           <span>Здесь мои контакты</span>
         </div>
-        
+
         <div class="me">
           <figure class="photo">
-            <img src="./img/photo1.jpg" alt="Photo">
+            <img src="./img/photo1.jpg" alt="Photo" />
           </figure>
           <figure class="arrow">
-            <img src="./img/arrow.svg" alt="arrow">
+            <img src="./img/arrow.svg" alt="arrow" />
           </figure>
           <span>Это я</span>
         </div>
-        
       </section>
       <!-- ----------------- -->
     </div>
@@ -114,16 +191,17 @@
       window.onload = function () {
         let elements = document.getElementsByClassName("typewrite");
         for (let i = 0; i < elements.length; i++) {
-        let toRotate = elements[i].getAttribute("data-type");
-        let period = elements[i].getAttribute("data-period");
-           if (toRotate) {
+          let toRotate = elements[i].getAttribute("data-type");
+          let period = elements[i].getAttribute("data-period");
+          if (toRotate) {
             let func = new TxtType(elements[i], JSON.parse(toRotate), period);
             func.tick();
           }
         }
         let css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid black}";
+        css.innerHTML =
+          ".typewrite > .wrap { border-right: 0.08em solid black}";
         document.body.appendChild(css);
 
         clock();
