@@ -429,7 +429,7 @@ body {
 }
 
 .items:hover {
-    transform: translateY(20px);
+    transform: translateY(10px);
 }
 
 .items:before {
@@ -469,7 +469,7 @@ body {
     z-index: 3;
     color: #000;
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(10px);
     transition: .5s all;
 }
 
