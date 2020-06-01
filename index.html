@@ -3,209 +3,455 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Nikita Zhidunov Portfolio" />
-    <meta name="author" content="Nikita Zhidunov" />
-    <meta
-      name="keywords"
-      content="portfolio, Nikita Zhidunov, frontend, JavaScript, React, html, css"
-    />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Portfolio</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <div class="container">
-      <!-- Основная страница портфолио -->
-      <section class="page">
-        <h1>Привет! Меня зовут Никита.</h1>
-        <h2>Я фронтенд разработчик.</h2>
+    <header>
+      <div class="menu-toggler">
+        <div class="bar half start"></div>
+        <div class="bar"></div>
+        <div class="bar half end"></div>
+      </div>
+      <nav class="top-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="landing-text">
+        <h1>Nikita Zhidunov</h1>
+        <h6>Junior Front-end developer</h6>
         <div
           class="typewrite"
           data-period="1000"
-          data-type='["Я использую:", "React + Redux", "Git + GitHub", "Photoshop + Figma", "HTML + CSS3"]'
+          data-type='["React + Redux", "Git + GitHub", "Photoshop + Figma", "HTML5 + CSS3"]'
         >
-          <span class="wrap"></span>
+          <span class="wrap">Junior Front-end developer</span>
         </div>
-        <nav class="page__nav">
-          <ul class="page__nav__ul">
-            <li>
-              <a class="page__nav__first" href="about.html">Обо мне</a>
-            </li>
-            <li>
-              <a class="page__nav__second" href="myworks.html">Мои работы</a>
-            </li>
-            <li>
-              <a class="page__nav__third" href="#">Блог</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="skills">
-          <ul>
-            <li class="html">Верстка</li>
-            <li class="js">JS Vanilla</li>
-            <li class="react">React.js</li>
-            <li class="git">Git</li>
-          </ul>
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+          <img src="./img/photo.jpg" alt="Photo" />
         </div>
-        <div class="todolist">
-          <span>Список дел на неделю:</span>
-          <div class="block">
-            <ul class="block__list"></ul>
-            <div class="block_form">
-              <form action="">
-                <input
-                  type="text"
-                  placeholder="Название дела"
-                  class="block__form-input"
-                />
-                <button type="submit" class="block__form-btn">Добавить</button>
-              </form>
-            </div>
+        <div class="about-details" data-aos="fade-left" data-aos-delay="600">
+          <div class="about-heading">
+            <h1>About</h1>
+            <h6>Myself</h6>
           </div>
-        </div>
-        <div class="clock">
-          <span class="doc_data"> </span>
-          <span class="doc_time"> </span>
-        </div>
-        <div class="mobile">
-          <div class="info__mobile">
-            <h3>Основная информация:</h3>
-            <p>
-              Мне 28 лет, живу в г. Сочи. Активно изучаю фронтенд разработку
-              последние полгода. До этого имел небольшой опыт в программировании
-              на различных языках (Java, C++, JavaScript).
-            </p>
-            <h3>Образование:</h3>
-            <p>
-              Имею два высших образования по специальностям
-              <a
-                target="_blank"
-                href="http://www.astu.org/Content/PageChair/3575"
-                >"Комплексное обеспечение информационной безопасности
-                автоматизированных систем"</a
-              >
-              и
-              <a
-                target="_blank"
-                href="http://asu.edu.ru/universitet/1058-uridicheskii-fakultet.html"
-                >"Юриспруденция"</a
-              >.
-            </p>
-            <figure><img src="img/photo1.jpg" alt="Photo" /></figure>
-            <h3>Профессиональные навыки:</h3>
-            <p>
-              На данный момент в своей практике использую следующие технологии и
-              инструменты:
-            </p>
-            <h4>Технологии:</h4>
-            <p>HTML, CSS, JavaScript, React, Redux, TypeScript</p>
-            <h4>Инструменты:</h4>
-            <p>GIT, Photoshop, Figma</p>
-          </div>
-          <div class="myworks__mobile">
-            <h3>Мои работы:</h3>
-            <div class="card">
-              <img src="img/social_network.jpg" alt="React">
-              <div class="infoCards">
-                  <h3>SPA on React</h3>
-                  <p>Учебный проект на React (небольшая соц. сеть) с использованием Redux, Redux-thunk, Axios, хоков, хуков и классовых компонентов</p>
-                  <a class="card__btn git_btn" target="_blank" href="https://github.com/Zhidunov/learn-react"><img src="img/github.svg" alt="github"></a>
-                  <a class="card__btn link_btn" target="_blank" href="https://zhidunov.github.io/learn-react/"><img src="img/link.svg" alt="link"></a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="img/colored_tiles.jpg" alt="colored tiles game">
-              <div class="infoCards">
-                  <h3>Игра</h3>
-                  <p>Тестовое задание - сделать игру на совпадение плиток одного цвета используя React + Redux</p>
-                  <a class="card__btn git_btn" target="_blank" href="https://github.com/Zhidunov/ColoredTilesGame"><img src="img/github.svg" alt="github"></a>
-                  <a class="card__btn link_btn" target="_blank" href="https://zhidunov.github.io/ColoredTilesGame"><img src="img/link.svg" alt="link"></a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="img/portfolio.jpg" alt="Portfolio">
-              <div class="infoCards">
-                  <h3>Портфолио</h3>
-                  <p>Мое портфолио. Обновляю по мере возможности. Иногда правки большие, иногда очень мелкие.</p>
-                  <a class="card__btn git_btn" target="_blank" href="https://github.com/Zhidunov/Portfolio"><img src="img/github.svg" alt="github"></a>
-              </div>
-            </div>
-          </div>
-          <div class="contacts__mobile">
-            <h3>Мои контакты:</h3>
-            <ul>
-              <li><a target="_blank" href="https://www.linkedin.com/in/nikita-zhidunov-a1932a112">Профиль на LinkedIn</a></li>
-              <li><a target="_blank" href="https://github.com/Zhidunov">GitHub</a></li>
-              <li><a href="mailto:zhidunov@gmail.com">Написать мне на e-mail</a></li>
+          <p>
+            My name is Nikita. I'm 28 years old. At the moment I live in Sochi
+            (Russia). Actively studying front-end development for the past six
+            months. Prior to this, I had little experience in diferent
+            programming languages (Java, C++, JavaScript).
+          </p>
+          <div class="social-media">
+            <ul class="nav-list">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/nikita-zhidunov-a1932a112"
+                  class="icon-link"
+                >
+                  <img src="./img/linkedin2.svg" alt="LinkedIn" />
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/Zhidunov"
+                  class="icon-link"
+                >
+                  <img src="./img/github2.svg" alt="GitHub" />
+                </a>
+              </li>
+              <li>
+                <a href="mailto:zhidunov@gmail.com" class="icon-link">
+                  <img src="./img/mail2.svg" alt="Email" />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-      </section>
-      <!-- ----------------- -->
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Skills</h1>
+          <h6>I use these technologies and tools</h6>
+        </div>
+        <div class="my-skills">
+          <div class="skill" data-aos="fade-in" data-aos-delay="300">
+            <div class="skill-heading">
+              <h1>Web Design</h1>
+              <blockquote class="blockquote">
+                <p>
+                  What separates design from art is that design is meant to
+                  be... functional.
+                </p>
+                <cite
+                  ><a target="_blank" href="http://cameronmoll.com/about"
+                    >Cameron Moll, facebook design manager</a
+                  ></cite
+                >
+              </blockquote>
+            </div>
 
-      <!-- Обложка портфолио -->
-      <section class="cover">
-        <div class="contact">
-          <img class="bookmark" src="./img/book2.svg" alt="bookmark" />
-          <ul class="bookmark__nav">
-            <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/nikita-zhidunov-a1932a112"
-                ><img src="./img/linkedin.svg" alt="linkedin"
-              /></a>
+            <div class="skills-container">
+              <div class="skills-card">
+                <span class="skill-name">HTML</span>
+                <div class="skill-percent">
+                  <div class="skill-progress ch1" style="width: 90%;"></div>
+                </div>
+                <span class="skill-value">90%</span>
+              </div>
+              <div class="skills-card">
+                <span class="skill-name">CSS</span>
+                <div class="skill-percent">
+                  <div class="skill-progress ch2" style="width: 70%;"></div>
+                </div>
+                <span class="skill-value">70%</span>
+              </div>
+              <div class="skills-card">
+                <span class="skill-name">Figma</span>
+                <div class="skill-percent">
+                  <div class="skill-progress ch3" style="width: 80%;"></div>
+                </div>
+                <span class="skill-value">80%</span>
+              </div>
+              <div class="skills-card">
+                <span class="skill-name">Photoshop</span>
+                <div class="skill-percent">
+                  <div class="skill-progress ch4" style="width: 65%;"></div>
+                </div>
+                <span class="skill-value">65%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill" data-aos="fade-in" data-aos-delay="600">
+            <div class="skill-heading">
+              <h1>Web Development</h1>
+              <blockquote class="blockquote">
+                <p>
+                  When you don't create things, you become defined by your
+                  tastes rather than ability. Your tastes only narrow & exclude
+                  people. So create.
+                </p>
+                <cite
+                  ><a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/Why_the_lucky_stiff"
+                    >Jonathan Gillette, ruby programmer</a
+                  ></cite
+                >
+              </blockquote>
+            </div>
+
+            <div class="skills-container">
+              <div class="skills-card">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-percent">
+                  <div class="skill-progress ch5" style="width: 85%;"></div>
+                </div>
+                <span class="skill-value">85%</span>
+              </div>
+              <div class="skills-card">
+                <span class="skill-name">React/Redux</span>
+                <div class="skill-percent">
+                  <div class="skill-progress ch6" style="width: 90%;"></div>
+                </div>
+                <span class="skill-value">90%</span>
+              </div>
+              <div class="skills-card">
+                <span class="skill-name">TypeScript</span>
+                <div class="skill-percent">
+                  <div class="skill-progress ch7" style="width: 62%;"></div>
+                </div>
+                <span class="skill-value">62%</span>
+              </div>
+              <div class="skills-card">
+                <span class="skill-name">React Native</span>
+                <div class="skill-percent">
+                  <div class="skill-progress ch8" style="width: 50%;"></div>
+                </div>
+                <span class="skill-value">50%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill" data-aos="fade-in" data-aos-delay="900">
+            <div class="skill-heading">
+              <h1>Soft Skills</h1>
+              <blockquote class="blockquote">
+                <p>
+                  Soft skills get little respect but they will make or break
+                  your career.
+                </p>
+                <cite
+                  ><a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/peggy-klaus-705730"
+                    >Peggy Klaus, author</a
+                  ></cite
+                >
+              </blockquote>
+            </div>
+
+            <div class="skills-container">
+              <div class="skills-card">
+                <span class="skill-name">Time Management</span>
+                <div class="skill-percent">
+                  <div class="skill-progress ch1" style="width: 95%;"></div>
+                </div>
+                <span class="skill-value">95%</span>
+              </div>
+              <div class="skills-card">
+                <span class="skill-name">Problem-solving</span>
+                <div class="skill-percent">
+                  <div class="skill-progress ch2" style="width: 90%;"></div>
+                </div>
+                <span class="skill-value">90%</span>
+              </div>
+              <div class="skills-card">
+                <span class="skill-name">Networking</span>
+                <div class="skill-percent">
+                  <div class="skill-progress ch3" style="width: 75%;"></div>
+                </div>
+                <span class="skill-value">75%</span>
+              </div>
+              <div class="skills-card">
+                <span class="skill-name">Creative Thinking</span>
+                <div class="skill-percent">
+                  <div class="skill-progress ch4" style="width: 80%;"></div>
+                </div>
+                <span class="skill-value">80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Portfolio</h1>
+          <h6>This is my works.</h6>
+        </div>
+        <div class="portfolio-item">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            <img src="./img/social_network.jpg" alt="Social network" />
+          </div>
+          <div
+            class="portfolio-description"
+            data-aos="fade-left"
+            data-aos-delay="600"
+          >
+            <h6>React + Redux</h6>
+            <h1>Social network</h1>
+            <p>
+              Social network created on React with Redux, React-Redux, Axios,
+              Redux-thunk, Classes and Hooks. APP was building on
+              FLUX-architecture. Interaction with REST API. You can ask me for a
+              test login and password.
+            </p>
+            <a
+              class="cta"
+              target="_blank"
+              href="https://github.com/Zhidunov/learn-react"
+              ><img src="img/github2.svg" alt="github"
+            /></a>
+            <a
+              class="cta"
+              target="_blank"
+              href="https://zhidunov.github.io/learn-react/"
+              ><img src="img/link2.svg" alt="link"
+            /></a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div
+            class="portfolio-description"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            <h6>React + Redux</h6>
+            <h1>Colored Tiles Game</h1>
+            <p>
+              This game created on React + Redux. It's just a test task.
+            </p>
+            <a
+              class="cta"
+              target="_blank"
+              href="https://github.com/Zhidunov/ColoredTilesGame"
+              ><img src="img/github2.svg" alt="github"
+            /></a>
+            <a
+              class="cta"
+              target="_blank"
+              href="https://zhidunov.github.io/ColoredTilesGame"
+              ><img src="img/link2.svg" alt="link"
+            /></a>
+          </div>
+          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="600">
+            <img src="./img/colored_tiles.jpg" alt="Colored Tiles" />
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            <img src="./img/portfolio.jpg" alt="Portfolio" />
+          </div>
+          <div
+            class="portfolio-description"
+            data-aos="fade-left"
+            data-aos-delay="600"
+          >
+            <h6>Web Design</h6>
+            <h1>Portfolio</h1>
+            <p>
+              This is my portfolio. Updating it whenever possible. Sometimes I make big edits, sometimes very small ones.
+            </p>
+            <a
+              class="cta"
+              target="_blank"
+              href="https://github.com/Zhidunov/Portfolio"
+              ><img src="img/github2.svg" alt="github"
+            /></a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div
+            class="portfolio-description"
+            data-aos="fade-right"
+            data-aos-delay="700"
+          >
+            <h6>React</h6>
+            <h1>Tetris</h1>
+            <p>
+              This is just a training application. Written in React using hooks.
+            </p>
+            <a
+              class="cta"
+              target="_blank"
+              href="https://github.com/Zhidunov/tetris-on-react"
+              ><img src="img/github2.svg" alt="github"
+            /></a>
+            <a
+              class="cta"
+              target="_blank"
+              href="https://zhidunov.github.io/tetris-on-react"
+              ><img src="img/link2.svg" alt="link"
+            /></a>
+          </div>
+          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="900">
+            <img src="./img/tetris.jpg" alt="Tetris" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Work Experience</h1>
+          <h6>Past and current jobs</h6>
+        </div>
+        <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+          <ul>
+            <li class="date" data-date="2016 - 2019">
+              <h1>Security Service</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                perferendis laudantium velit odio! Deleniti sit dicta vero
+                repellat expedita rem! Saepe voluptatibus corporis excepturi
+                aspernatur aliquam, velit optio a officiis?
+              </p>
             </li>
-            <li>
-              <a target="_blank" href="https://github.com/Zhidunov"
-                ><img src="./img/github.svg" alt="github"
-              /></a>
+            <li class="date" data-date="2014 - 2016">
+              <h1>ASRZ</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                perferendis laudantium velit odio! Deleniti sit dicta vero
+                repellat expedita rem! Saepe voluptatibus corporis excepturi
+                aspernatur aliquam, velit optio a officiis?
+              </p>
             </li>
-            <li>
-              <a href="mailto:zhidunov@gmail.com"
-                ><img src="./img/mail.svg" alt="email"
-              /></a>
+            <li class="date" data-date="2013 - 2014">
+              <h1>Administration</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                perferendis laudantium velit odio! Deleniti sit dicta vero
+                repellat expedita rem! Saepe voluptatibus corporis excepturi
+                aspernatur aliquam, velit optio a officiis?
+              </p>
             </li>
           </ul>
-          <figure class="arrow">
-            <img src="./img/arrow.svg" alt="arrow" />
-          </figure>
-          <span>Здесь мои контакты</span>
         </div>
+      </div>
+    </section>
 
-        <div class="me">
-          <figure class="photo">
-            <img src="./img/photo1.jpg" alt="Photo" />
-          </figure>
-          <figure class="arrow">
-            <img src="./img/arrow.svg" alt="arrow" />
-          </figure>
-          <span>Это я</span>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Contact</h1>
+          <h6>Let's work together</h6>
         </div>
-      </section>
-      <!-- ----------------- -->
-    </div>
-    <script src="./scripts/Clock.js"></script>
-    <script src="./scripts/Typewriter.js"></script>
-    <script src="./scripts/ToDoList.js"></script>
-    <script>
-      window.onload = function () {
-        let elements = document.getElementsByClassName("typewrite");
-        for (let i = 0; i < elements.length; i++) {
-          let toRotate = elements[i].getAttribute("data-type");
-          let period = elements[i].getAttribute("data-period");
-          if (toRotate) {
-            let func = new TxtType(elements[i], JSON.parse(toRotate), period);
-            func.tick();
-          }
-        }
-        let css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML =
-          ".typewrite > .wrap { border-right: 0.08em solid black}";
-        document.body.appendChild(css);
+        <form action="" data-aos="fade-up" data-aos-delay="300">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name..."
+            required
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email..."
+            required
+          />
+          <label for="service">Services:</label>
+          <select name="services" id="services">
+            <option value="">Web design</option>
+            <option value="">Web development</option>
+            <option value="">Web design/development</option>
+          </select>
+          <label for="subject">Subject:</label>
+          <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
 
-        clock();
-      };
-    </script>
+    <footer class="copyright">
+      <div class="up" id="up">
+        <img src="./img/uparrow2.svg" alt="Up" />
+      </div>
+      <p>&copy; 2020 Nikita Zhidunov</p>
+    </footer>
+
+    <script src="SmoothScroll.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="Typewriter.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -5,11 +5,9 @@ document.addEventListener('DOMContentLoaded', function(){
     menuToggler.addEventListener('click', () => {
         menuToggler.classList.toggle('open');
         topNav.classList.toggle('open');
-        console.log('Из первого')
     })
     for(let i=0; i<navLink.length; i++){
         navLink[i].addEventListener('click', () => {
-            console.log('Из второго')
             menuToggler.classList.remove('open');
             topNav.classList.remove('open');
             smoothScroll(navLink[i].innerHTML.toLowerCase(), 1000);
@@ -29,4 +27,13 @@ document.addEventListener('DOMContentLoaded', function(){
         once: true
     });
 
+    let typewrite = document.querySelectorAll(".typewrite");
+        for (let i = 0; i < typewrite.length; i++) {
+          let toRotate = typewrite[i].getAttribute("data-type");
+          let period = typewrite[i].getAttribute("data-period");
+          if (toRotate) {
+            let func = new TxtType(typewrite[i], JSON.parse(toRotate), period);
+            func.tick();
+          }
+        }
 });

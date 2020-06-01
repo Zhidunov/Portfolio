@@ -154,6 +154,7 @@ li {
 }
 
 .menu-toggler.open {
+  position: fixed;
   transform: rotate(-45deg);
 }
 
@@ -208,6 +209,12 @@ li {
 }
 
 .landing-text h6 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.typewrite > .wrap {
+  border-right: 0.08em solid white;
   font-size: 2rem;
   font-weight: 400;
 }
@@ -238,6 +245,17 @@ li {
 .profile-img {
   flex: 1;
   margin-right: 5rem;
+  max-width: 400px;
+}
+
+.profile-img img {
+  border-radius: 1rem;
+}
+.nav-list img {
+  transition: transform 1s;
+}
+.nav-list img:hover {
+  transform: rotate(360deg);
 }
 
 .about-details {
@@ -256,7 +274,7 @@ li {
 .my-skills {
   margin-top: 10rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-gap: 2.5rem;
   text-align: center;
   justify-content: center;
@@ -270,28 +288,137 @@ li {
   padding: 2rem;
 }
 
+.skill-heading {
+  height: 150px;
+}
+
 .skill h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 2rem -2px 2rem 0;
 }
 
-.svg-container {
-  width: 10rem;
-  height: 10rem;
-  border: 3px solid #ffe838;
-  background-color: #fd57bf;
-  margin-bottom: 2rem;
-  display: flex;
-  transform: rotate(45deg);
+/* Blockqote */
+
+.skill blockquote p {
+  text-align: justify;
+  font-size: 1.5rem;
 }
 
-.svg-container img {
-  color: #ffe838;
-  font-size: 5rem;
-  margin: auto;
-  transform: rotate(-45deg);
+.skill blockquote p::before {
+    content: "“";
+    font-size: 4rem;
+    line-height: 0;
+    margin: 10px;
 }
+.skill blockquote cite {
+    float: right;
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+.skill blockquote a {
+  transition: color 650ms;
+}
+
+.skill blockquote a:hover {
+  color: #2f67cd;
+}
+/* --------- */
+
+.skills-container {
+  position: relative;
+  width: 100%;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.skills-container .skills-card{
+  position: relative;
+  display: flex;
+  height: 50px;
+  margin: 20px 0;
+  background: linear-gradient(#616161 0%, rgb(31, 30, 30) 30%, #222);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #000;
+  transition: 0.5s;
+}
+.skills-container:hover .skills-card {
+  opacity: 0.05;
+}
+.skills-container .skills-card:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.skills-container .skills-card .skill-name {
+  position: relative;
+  width: 110px;
+  text-align: right;
+  color: #fff;
+  margin: auto;
+  margin-right: 10px;
+}
+.skills-container .skills-card .skill-value {
+  position: relative;
+  width: 30px;
+  text-align: left;
+  color: #fff;
+  margin: auto;
+  margin-left: 10px;
+}
+.skills-container .skills-card .skill-percent {
+  position: relative;
+  width: calc(100% - 200px);
+  height: 15px;
+  margin: auto 10px;
+  padding: 0px;
+  border-radius: 10px;
+  background: #151515;
+  box-shadow: inset 0 0 10px #000;
+  overflow: hidden;
+}
+.skills-container .skills-card .skill-percent .skill-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: inset 0 0 2px #000;
+  animation: animate 4s ease-in-out forwards;
+}
+@keyframes animate {
+  from {
+    width: 0;
+  }
+}
+
+.skills-container .skills-card .skill-percent .ch1 {
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+.skills-container .skills-card .skill-percent .ch2 {
+  background: linear-gradient(45deg, #1fe6ff, #673AB7);
+}
+.skills-container .skills-card .skill-percent .ch3 {
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+.skills-container .skills-card .skill-percent .ch4 {
+  background: linear-gradient(to right, #f7ff00, #db36a4);
+}
+.skills-container .skills-card .skill-percent .ch5 {
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+}
+.skills-container .skills-card .skill-percent .ch6 {
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+.skills-container .skills-card .skill-percent .ch7 {
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+}
+.skills-container .skills-card .skill-percent .ch8 {
+  background: linear-gradient(to right, #e1eec3, #f05053);
+}
+
 
 .portfolio-item {
   display: flex;
@@ -304,6 +431,7 @@ li {
 }
 
 .portfolio img {
+  border-radius: 1rem;
   flex: 1;
 }
 
@@ -331,6 +459,16 @@ li {
   text-transform: uppercase;
   color: #3883ff;
   transition: color 650ms;
+}
+
+.portfolio-description .cta img {
+    max-width: 3rem;
+    margin: 1rem;
+    transition: transform 1s;
+}
+
+.portfolio-description .cta img:hover {
+  transform: rotate(360deg);
 }
 
 .portfolio-description .cta:hover {
@@ -442,7 +580,6 @@ input[type="submit"]:hover {
   position: absolute;
   width: 5rem;
   height: 5rem;
-  background-color: #eee;
   top: -2.5rem;
   right: 5rem;
   border-radius: 100%;
@@ -473,6 +610,10 @@ input[type="submit"]:hover {
 
 /* Media queries */
 
+@media screen and (max-width: 1023px) {
+
+}
+
 @media screen and (max-width: 768px) {
   .landing-text h1 {
     font-size: 15rem;
@@ -499,10 +640,10 @@ input[type="submit"]:hover {
   .about-details .nav-list {
     flex-direction: initial;
   }
-  .svg-container {
+  /* .svg-container {
     width: 7rem;
     height: 7rem;
-  }
+  } */
   .timeline ul {
     margin: 0 0 0 auto;
   }
