@@ -50,7 +50,7 @@ img {
   margin-bottom: 10rem;
 }
 
-.section-heading h1 {
+.section-heading h2 {
   font-size: 3.5rem;
   color: rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
@@ -59,8 +59,8 @@ img {
   margin-bottom: 1rem;
 }
 
-.section-heading h1::before,
-.section-heading h1::after {
+.section-heading h2::before,
+.section-heading h2::after {
   content: "";
   position: absolute;
   bottom: -0.5rem;
@@ -69,13 +69,13 @@ img {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-.section-heading h1::before {
+.section-heading h2::before {
   width: 10rem;
   height: 3px;
   border-radius: 0.8rem;
 }
 
-.section-heading h1::after {
+.section-heading h2::after {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 100%;
@@ -100,7 +100,7 @@ header {
   width: 100%;
   height: 100vh;
   position: fixed;
-  top: -100vh;
+  top: -200vh;
   z-index: 50;
   background-color: #16162d;
   border-bottom-right-radius: 100%;
@@ -232,7 +232,7 @@ li {
   margin-bottom: 6rem;
 }
 
-.about-heading h1 {
+.about-heading h2 {
   font-size: 10rem;
   opacity: 0.3;
 }
@@ -272,7 +272,7 @@ li {
 }
 
 .my-skills {
-  margin-top: -5rem;
+  margin-top: 10rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-gap: 2.5rem;
@@ -292,7 +292,7 @@ li {
   height: 150px;
 }
 
-.skill h1 {
+.skill h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 2rem -2px 2rem 0;
@@ -394,7 +394,7 @@ li {
   }
 }
 
-.skills-container .skills-card .skill-percent .ch1 {
+.skills-container .skills-card .skill-percent .ch2 {
   background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
 }
 .skills-container .skills-card .skill-percent .ch2 {
@@ -439,7 +439,7 @@ li {
   flex: 1;
 }
 
-.portfolio-description h1 {
+.portfolio-description h2 {
   font-size: 3rem;
   font-weight: 300;
   margin: 1rem 0;
@@ -487,7 +487,7 @@ li {
   width: 70%;
 }
 
-.timeline h1 {
+.timeline h2 {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 300;
@@ -613,12 +613,8 @@ input[type="submit"]:hover {
 
 /* Media queries */
 
-@media screen and (max-width: 1023px) {
-
-}
-
 @media screen and (max-width: 768px) {
-  .landing-text h1 {
+  .landing-text h2 {
     font-size: 15rem;
   }
   .landing-text h6 {
@@ -634,19 +630,15 @@ input[type="submit"]:hover {
   .nav-link {
     font-size: 6rem;
   }
-  .about-heading h1 {
+  .about-heading h2 {
     font-size: 8rem;
   }
-  .section-heading h1 {
+  .section-heading h2 {
     font-size: 3rem;
   }
   .about-details .nav-list {
     flex-direction: initial;
   }
-  /* .svg-container {
-    width: 7rem;
-    height: 7rem;
-  } */
   .timeline ul {
     margin: 0 0 0 auto;
   }
@@ -658,12 +650,27 @@ input[type="submit"]:hover {
   }
 }
 
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .nav-list {
+    flex-direction: initial;
+  }
+  .nav-link {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .landing-text h2 {
+    font-size: 10rem;
+  }
+}
+
+
 @media screen and (max-width: 600px) {
   .menu-toggler {
     top: 2rem;
     right: 2rem;
   }
-  .landing-text h1 {
+  .landing-text h2 {
     font-size: 8rem;
   }
   .landing-text h6 {

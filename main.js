@@ -21,11 +21,6 @@ document.addEventListener('DOMContentLoaded', function(){
         });
     })
     
-    AOS.init({
-        easing: 'ease',
-        duration: 1000,
-        once: true
-    });
 
     let typewrite = document.querySelectorAll(".typewrite");
         for (let i = 0; i < typewrite.length; i++) {
