@@ -672,6 +672,9 @@ input[type="submit"]:hover {
   .landing-text h6 {
     font-size: 1.4rem;
   }
+  .landing-text .wrap {
+    font-size: 1.4rem;
+  }
   .nav-link {
     font-size: 3.5rem;
   }
@@ -764,9 +767,6 @@ input[type="submit"]:hover {
   }
   .landing-text h1 {
     font-size: 6rem;
-  }
-  .landing-text h6 {
-    font-size: 1.4rem;
   }
   .nav-link {
     font-size: 1.5rem;
