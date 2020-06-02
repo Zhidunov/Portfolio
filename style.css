@@ -309,15 +309,15 @@ li {
 }
 
 .skill blockquote p::before {
-    content: "“";
-    font-size: 4rem;
-    line-height: 0;
-    margin: 10px;
+  content: "“";
+  font-size: 4rem;
+  line-height: 0;
+  margin: 10px;
 }
 .skill blockquote cite {
-    float: right;
-    margin-top: 10px;
-    font-size: 1.3rem;
+  float: right;
+  margin-top: 10px;
+  font-size: 1.3rem;
 }
 .skill blockquote a {
   transition: color 650ms;
@@ -334,7 +334,7 @@ li {
   font-size: 1.4rem;
   text-transform: uppercase;
 }
-.skills-container .skills-card{
+.skills-container .skills-card {
   position: relative;
   display: flex;
   height: 50px;
@@ -398,10 +398,10 @@ li {
 }
 
 .skills-container .skills-card .skill-percent .ch2 {
-  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
 }
 .skills-container .skills-card .skill-percent .ch2 {
-  background: linear-gradient(45deg, #1fe6ff, #673AB7);
+  background: linear-gradient(45deg, #1fe6ff, #673ab7);
 }
 .skills-container .skills-card .skill-percent .ch3 {
   background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
@@ -421,7 +421,6 @@ li {
 .skills-container .skills-card .skill-percent .ch8 {
   background: linear-gradient(to right, #e1eec3, #f05053);
 }
-
 
 .portfolio-item {
   display: flex;
@@ -465,9 +464,9 @@ li {
 }
 
 .portfolio-description .cta img {
-    max-width: 3rem;
-    margin: 1rem;
-    transition: transform 1s;
+  max-width: 3rem;
+  margin: 1rem;
+  transition: transform 1s;
 }
 
 .portfolio-description .cta img:hover {
@@ -553,7 +552,7 @@ textarea {
   padding: 1rem;
   margin-bottom: 5px;
   border: none;
-  outline-color: #00C9FF;
+  outline-color: #00c9ff;
 }
 
 textarea {
@@ -571,7 +570,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #00C9FF;
+  background-color: #00c9ff;
 }
 
 .copyright {
@@ -713,16 +712,27 @@ input[type="submit"]:hover {
   }
 }
 
-@media screen and (max-width : 360px) {
-
+@media screen and (max-width: 360px) {
+  .section-heading {
+    margin-bottom: 2rem;
+  }
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+  .section-heading h6 {
+    font-size: 1.5rem;
+  }
+  .timeline h2 {
+    font-size: 1.5rem;
+  }
   .skills-container {
     font-size: 0.8rem;
   }
-  .skills-container .skills-card{
+  .skills-container .skills-card {
     height: 30px;
     margin: 10px 0;
   }
-  
+
   .skills-container .skills-card .skill-name {
     width: 50px;
     margin-right: 3px;
@@ -746,9 +756,8 @@ input[type="submit"]:hover {
   .timeline p {
     font-size: 1rem;
   }
-
 }
-@media screen and (max-width : 320px) {
+@media screen and (max-width: 320px) {
   .menu-toggler {
     top: 1.5rem;
     right: 1.5rem;
@@ -766,6 +775,3 @@ input[type="submit"]:hover {
     font-size: 4rem;
   }
 }
-
-
-
