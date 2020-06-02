@@ -614,7 +614,7 @@ input[type="submit"]:hover {
 /* Media queries */
 
 @media screen and (max-width: 768px) {
-  .landing-text h2 {
+  .landing-text h1 {
     font-size: 15rem;
   }
   .landing-text h6 {
@@ -659,7 +659,7 @@ input[type="submit"]:hover {
   }
 }
 @media screen and (max-height: 450px) and (orientation: landscape) {
-  .landing-text h2 {
+  .landing-text h1 {
     font-size: 10rem;
   }
 }
@@ -670,7 +670,7 @@ input[type="submit"]:hover {
     top: 2rem;
     right: 2rem;
   }
-  .landing-text h2 {
+  .landing-text h1 {
     font-size: 8rem;
   }
   .landing-text h6 {
