@@ -233,11 +233,13 @@ li {
 }
 
 .about-heading h2 {
+  width: 100%;
   font-size: 10rem;
   opacity: 0.3;
 }
 
 .about-heading h6 {
+  width: 100%;
   font-size: 2rem;
   font-weight: 300;
 }
@@ -259,6 +261,7 @@ li {
 }
 
 .about-details {
+  width: 100%;
   flex: 1;
 }
 
@@ -682,6 +685,9 @@ input[type="submit"]:hover {
   .about .container {
     flex-direction: column;
   }
+  .about-heading h2 {
+    font-size: 6rem;
+  }
   .profile-img {
     margin: 0 0 7rem 0;
   }
@@ -704,5 +710,24 @@ input[type="submit"]:hover {
   }
   .up {
     right: 2rem;
+  }
+}
+
+@media screen and (max-width : 320px) {
+  .menu-toggler {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+  .landing-text h1 {
+    font-size: 6rem;
+  }
+  .landing-text h6 {
+    font-size: 1.4rem;
+  }
+  .nav-link {
+    font-size: 1.5rem;
+  }
+  .about-heading h2 {
+    font-size: 5rem;
   }
 }
