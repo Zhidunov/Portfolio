@@ -272,7 +272,7 @@ li {
 }
 
 .my-skills {
-  margin-top: 10rem;
+  margin-top: -5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-gap: 2.5rem;
