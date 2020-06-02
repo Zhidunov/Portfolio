@@ -476,7 +476,7 @@ li {
 }
 
 .timeline ul {
-  border-left: 4px solid #ffe838;
+  border-left: 4px solid #38f8ff;
   border-radius: 0.8rem;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 0 auto;
@@ -526,7 +526,7 @@ li {
 
 .timeline .date::after {
   content: "";
-  box-shadow: 0 0 0 4px #fd57bf;
+  box-shadow: 0 0 0 4px #068fff;
   border-radius: 100%;
   left: -6rem;
   height: 1.5rem;
@@ -550,12 +550,16 @@ textarea {
   padding: 1rem;
   margin-bottom: 5px;
   border: none;
-  outline-color: #fd57bf;
+  outline-color: #00C9FF;
+}
+
+textarea {
+  resize: none;
 }
 
 input[type="submit"] {
   width: initial;
-  background-color: #fd57bf;
+  background-color: #068fff;
   color: #eee;
   padding: 1rem 2rem;
   border-radius: 0.8rem;
@@ -564,8 +568,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  color: #221e3f;
-  background-color: #ffe838;
+  background-color: #00C9FF;
 }
 
 .copyright {
